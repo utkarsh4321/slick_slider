@@ -214,7 +214,6 @@
           </ul>
         </li>
 
-
         <li>
           <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false">
             <i class="fas fa-box-open"></i>Product
@@ -228,24 +227,6 @@
             <li>
               <a href="./viewproduct.html"><i class="far fa-eye"></i>View Product</a>
             </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false">
-            <i class="fas fa-wrench"></i>Garage
-            <i class="fas fa-angle-down fa-pull-right"></i>
-          </a>
-          <ul class="collapse list-unstyled" id="pageSubmenu6">
-            <li class="text-white">
-              <a href="./addgaurage.html"><i class="fas fa-wrench m-0 p-0"></i><span class="m-0 p-0"><i
-                    class="fas fa-plus"></i></span></i>Add a
-                Garage</a>
-            </li>
-            <!-- <li>
-                <a href="./viewproduct.html"
-                  ><i class="far fa-eye"></i>View Product</a
-                >
-              </li> -->
           </ul>
         </li>
       </ul>
@@ -314,7 +295,7 @@
       <div class="container p-0">
         <div class="outer-w3-agile col-xl mt-xl-0 mt-3">
           <h1 class="text-center mb-4">
-            Add a <span style="color:rgb(230, 16, 26);">Service</span>
+            Add a <span style="color:rgb(230, 16, 26);">Gaurage</span>
           </h1>
           <!-- <div id="loaderss"></div> -->
           <div class="row">
@@ -330,60 +311,156 @@
 
           <div class="row">
             <div class="col-md-6 mx-auto mina">
+              <!-- FORM STARTED -->
               <form>
-                <!-- FIRST SELECT -->
-                <div class="form-group">
-                  <div class="col-auto">
-                    <label for="exampleFormControlSelect1" class="mb-2 text-secondary">Services Categories:</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="fas fa-cogs"></i>
+                <div class="row">
+                  <div class="col-md-6 text-secondary">
+
+                    <div class="form-group">
+                      <label>Name:</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-warehouse"></i></span>
+
                         </div>
+                        <input type="text" class="form-control" placeholder="name" required>
                       </div>
-                      <select class="form-control" id="exampleFormControlSelect1" required>
-                        <option value="">Services</option>
-                        <option>Admin</option>
-                        <option>Director</option>
-                        <option>Manager</option>
-                        <option>PA / Receptionist</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select any option
+
+
+
+
+                    </div>
+
+
+                  </div>
+                  <div class="col-md-6 text-secondary">
+                    <div class="form-group">
+                      <label>Location:</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-location-arrow"></i></span>
+
+                        </div>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
                       </div>
+
+
+
+
                     </div>
                   </div>
                 </div>
-                <!-- SECOND SELECT  -->
+                <div class="row">
+                  <div class="col-md-12 text-secondary">
+                    <div class="form-group">
+                      <label>Services:</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-cog"></i></span>
 
-                <!-- Service SECTION STARTED -->
-                <div class="col-auto">
+                        </div>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+
+
+
+                    </div>
+
+
+
+                  </div>
+
+
+                </div>
+                <div class="form-group text-secondary">
+
                   <div class="form-group">
-                    <label for="exampleInputsecond2" class="text-secondary mb-2">Add service:</label>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="fas fa-envelope-open-text"></i>
-                        </span>
+                    <label for="exampleFormControlSelect1" class="pb-1">Products:</label>
+                    <div class="text-secondary d-flex flex-wrap justify-content-between" style="font-size:.9rem;">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1" name="job"
+                          required>
+                        <label class="form-check-label" for="inlineCheckbox6">Face to Face</label>
                       </div>
-                      <input type="text" class="form-control" placeholder="Enter your service" autocomplete="off"
-                        required />
+                      <div class="form-check form-check-inline justify-item-start">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" name="job" value="option2"
+                          required>
+                        <label class="form-check-label" for="inlineCheckbox7">Written-test</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox8" name="job" value="option3"
+                          readonly>
+                        <label class="form-check-label" for="inlineCheckbox8">Telephonic</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option3" name="job"
+                          readonly>
+                        <label class="form-check-label" for="inlineCheckbox9">Group Discussion</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option3" name="job"
+                          readonly>
+                        <label class="form-check-label" for="inlineCheckbox10">Walk In</label>
+                      </div>
+
                     </div>
+                  </div>
+
+
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-secondary">
+                    <label>Upload Images:</label>
+
+                    <div class="input-group mb-3">
+
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                          aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01" style="overflow:hidden;">Choose
+                          file</label>
+                      </div>
+                    </div>
+
+
                   </div>
                 </div>
 
-                <!-- service SECTION ENDED -->
+                <!-- !IMAGES SECTION STARTED -->
+                <div id="upImges" class="m-3 d-none">
+                  <div class="row" id="insertHere">
+
+                  </div>
+
+
+
+
+                </div>
+
+                <!--! IMAGES SECTION ENDED  -->
 
                 <!-- FOURTH SELECT -->
 
                 <div class="form-group">
-                  <div class="col pt-3 pb-0 mb-0 text-center">
+                  <div class="pt-3 pb-0 mb-0 text-center">
                     <button class="btn text-white px-5 bg-danger btn-block">
                       Submit
                     </button>
                   </div>
                 </div>
               </form>
+              <!-- FORM ENDED -->
             </div>
           </div>
         </div>
@@ -392,7 +469,6 @@
       <!-- SELECT BAR ENDED -->
 
       <!-- date -->
-
       <!-- DATE ENDED -->
 
       <!--// Three-grids -->
@@ -421,6 +497,7 @@
     $(window).load(function () {
       // Animate loader off screen
       $(".se-pre-con").fadeOut("slow");
+      // Todos
     });
   </script>
   <!--// loading-gif Js -->
@@ -465,8 +542,40 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script> -->
+  <script>
+    $('#inputGroupFile01').on('change', function () {
+      //get the file name
+      let fileName = $(this).val();
+      //replace the "Choose a file" label
+      $(this).next('.custom-file-label').html(fileName);
+      let place = $('#upImges');
+      const reader = new FileReader();
+      reader.onload = function () {
 
-  <script src="./js/log.js"></script>
+        // document.getElementById('upImage').style.display = 'block';
+        place.removeClass('d-none');
+        place.addClass('d-block');
+
+        const img = new Image();
+        img.src = reader.result;
+        // img.style.maxWidth = '5rem';
+        // img.style.height = '5rem';
+        // img.style.margin = '.5rem';
+
+        const intr = document.getElementById('insertHere');
+        const div = document.createElement('div');
+        div.classList.add('col-md-3,col-sm-3,mx-auto,text-center');
+
+        div.appendChild(img);
+        intr.appendChild(div)
+
+      }
+      reader.readAsDataURL(this.files[0])
+
+    })
+  </script>
+
+  <!-- <script src="./js/log.js"></script> -->
 </body>
 
 </html>
